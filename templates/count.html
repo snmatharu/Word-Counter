@@ -1,0 +1,13 @@
+<html>
+    <title>Word Counter</title>
+    <body style="background-color: blanchedalmond;font-family: 'Courier New', Courier, monospace;text-align: center;">
+        <h1>There are {{count}} words in your text</h1>
+        <h3><a href="{%url 'home'%}">Start Again</a></h3>
+        <h3>Your Text: {{fulltext}}</h3>
+        <h2>Word Count: </h2>
+        {%for word, counttotal in sortedwords%}
+        {{word }} - {{ counttotal}}
+        <br/>
+        {%endfor%}
+    </body>
+</html>

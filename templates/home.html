@@ -1,0 +1,12 @@
+<html>
+    <title>Word Counter</title>
+    <body style="background-color: blanchedalmond;font-family: 'Courier New', Courier, monospace;text-align: center;">
+        <h1>ATOM.co.in</h1>
+        <h2><a href="{%url 'about'%}">Word Counter</a></h2>
+        <form action="{%url 'count'%}"style="align-content:center">
+            <h3>Enter The Words Here</h3>
+            <textarea cols="60" rows="8" name="fulltext"></textarea>
+            <br><br><input type="submit" value="Count!"/>
+        </form>
+    </body>
+</html>
